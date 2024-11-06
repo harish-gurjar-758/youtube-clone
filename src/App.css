@@ -1,0 +1,283 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.dark-mode {
+  --background-color: black;
+  --text-color: white;
+}
+
+.light-mode {
+  --background-color: white;
+  --text-color: black;
+}
+
+
+
+.Youtube {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+.Youtube .react-link {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* MenuBar and Layout */
+.Youtube .MenuBar {
+  width: 100%;
+  height: 80px;
+  background: var(--background-color);
+}
+
+.MenuBar nav {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.MenuBar nav .nav-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.MenuBar nav .nav-box .layout-controle-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  font-size: 25px;
+  background-color: #eae8e8;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.MenuBar nav .nav-box .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: red;
+      font-size: 35px;
+    }
+  }
+
+}
+
+.MenuBar nav .nav-box li {
+  font-size: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.MenuBar nav .search-container {
+  width: 30%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+
+  input {
+    width: 90%;
+    height: 95%;
+    border: none;
+    outline: none;
+    border-right: 1px solid black;
+  }
+
+  p {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+.MenuBar .Layout {
+  min-width: 50px;
+  max-width: 150px;
+  position: fixed;
+  left: 0px;
+  top: 80px;
+  background-color: white;
+  border-right: 2px solid black;
+}
+
+.Layout .layout-box {
+  width: 100%;
+
+  ul {
+    width: 100%;
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    gap: 10px;
+  }
+}
+
+.Layout .layout-box ul .react-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-left: 10px;
+}
+
+
+/* Home  */
+.Home {
+  /* width: 100%; */
+  margin-top: 90px;
+  margin-left: 160px;
+  margin-right: 20px;
+}
+
+.Home .video-card-groups {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.Home .video-card-groups .video-card {
+  width: 300px;
+  height: 250px;
+  /* background-color: #c0bdbd; */
+  border-radius: 5px;
+  box-shadow: #c0bdbd 1px 0 10px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 168px;
+  }
+
+  h5 {
+    padding-left: 5px;
+  }
+}
+
+/* VideoDetails */
+.VideoDetails {
+  /* width: 100%; */
+  margin-top: 20px;
+  padding-left: 170px;
+  display: flex;
+}
+
+.VideoDetails .main-video {
+  width: 70%;
+
+  YouTube {
+    width: 100%;
+  }
+}
+
+.VideoDetails .similar-videos {
+  width: 25%;
+  margin-left: 20px;
+}
+
+.VideoDetails .similar-videos .similar-videos-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 10px;
+}
+
+.VideoDetails .similar-videos .video-card {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  gap: 10px;
+  background-color: ghostwhite;
+
+  img {
+    width: 80px;
+    height: 100%;
+  }
+}
+
+.VideoDetails .similar-videos .video-card .details-container{
+  height: 100%;
+}
+
+.VideoDetails .similar-videos .video-card .details{
+  display: flex;
+  gap: 20px;
+  span{
+    font-weight: bold;
+  }
+}
+
+
+/* Shorts */
+.Shorts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Shorts .shorts-container{
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 40%;
+  border: 2px solid red;
+  position: relative;
+}
+
+.Shorts .shorts-container .short-video{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+
+.Shorts .shorts-container .short-video .video-container{
+  width: 80%;
+  background-color: rebeccapurple;
+}
+
+.short-video{
+  width: 100%;
+}
+
+.Shorts .shorts-container .short-video .video-stats{
+/* position: absolute; */
+display: flex;
+flex-direction: column;
+align-items: end;
+}
